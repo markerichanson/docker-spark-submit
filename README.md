@@ -37,7 +37,7 @@ $ docker run -it --net="host" -v $PWD:/root/project markerichanson/docker-spark-
 
 ```sh
 # for direct invocation of spark-submit on your command line
-alias spark-submit='docker run -it --net="host"-v $PWD:/root/project markerichanson/docker-spark-submit:2.0.2-2.7  spark-submit'
+alias spark-submit='docker run -it --net="host" -v $PWD:/root/project markerichanson/docker-spark-submit:2.0.2-2.7  spark-submit'
 # for a bash session in the spark-client environment, though this isn't likely needed except for debuging the image
 alias spark-submit-bash='docker run -it --net="host" -v $PWD:/root/project markerichanson/docker-spark-submit:2.0.2-2.7'
 ```
